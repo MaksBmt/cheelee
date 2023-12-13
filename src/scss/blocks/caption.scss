@@ -1,0 +1,32 @@
+.caption {
+    color: $light-common;
+    margin: 0;
+
+    &--lg {
+        font-size: 72px;
+        line-height: 88px;
+        font-weight: 900;
+    }
+
+    &--md {
+        font-size: 56px;
+        line-height: 68px;
+        font-weight: 900;
+    }
+
+    &--sm {
+        font-size: 26px;
+        line-height: 38px;
+        font-weight: 700;
+    }
+
+    &--xs {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+
+    &--green {
+        color: $green-common;
+    }
+}

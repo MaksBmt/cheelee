@@ -1,0 +1,19 @@
+.language {
+    cursor: pointer;
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-disabled;
+        text-transform: uppercase;
+    }
+
+    &__svg {
+        position: relative;
+        width: 10px;
+        height: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: $text-disabled;
+    }
+}

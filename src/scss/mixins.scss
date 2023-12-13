@@ -1,0 +1,31 @@
+@mixin min-max($min-width, $max-width) {
+  min-width: $min-width;
+  max-width: $max-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin list-reset($padding-left: 0) {
+  margin: 0;
+  padding-left: $padding-left;
+  list-style: none;
+}
+
+@mixin link-reset($text-decoration: none) {
+  text-decoration: $text-decoration;
+  cursor: pointer;
+}
+
+@mixin button() {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  box-shadow: none;
+  appearance: none;
+  border: none;
+}
+
+@mixin font($font-size: 14px, $line-height: 18px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}

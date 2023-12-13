@@ -1,0 +1,33 @@
+.presentation {
+
+    &__wrap {
+        padding: 0 115px;
+        padding-top: 240px;
+        padding-bottom: 278px;
+        background-image: url('../img/two-phones@1x.webp');
+        background-repeat: no-repeat;
+        background-position: 130% -40px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/two-phones@2x.webp');
+        }
+
+        @media (min-resolution: 3dppx) {
+            background-image: url('../img/two-phones@3x.webp');
+        }
+    }
+
+    &__title {
+        width: 340px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin: 0;
+        width: 360px;
+        font-size: 18px;
+        line-height: 33px;
+        font-weight: 400;
+        color: $light-common;
+    }
+}

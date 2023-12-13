@@ -1,0 +1,106 @@
+.advantages {
+
+    &__wrap {
+        padding: 99px 115px;
+        background-image: url('../img/advantages-bg@1x.webp');
+        background-repeat: no-repeat;
+        background-position: 115px 305px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/advantages-bg@2x.webp');
+        }
+
+        @media (min-resolution: 3dppx) {
+            background-image: url('../img/advantages-bg@3x.webp');
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 33px;
+    }
+
+    &__item {
+
+        &:nth-child(1) {
+            width: 348px;
+        }
+
+        &:nth-child(2) {
+            width: 252px;
+        }
+
+        &:nth-child(3) {
+            width: 321px;
+        }
+
+        &:nth-child(4) {
+            margin-left: auto;
+            margin-top: 61px;
+            padding-right: 130px;
+            width: 190px;
+        }
+
+        &:nth-child(5) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 802px;
+            margin-top: 61px;
+        }
+
+        &:nth-child(-n+2) {
+            margin-right: 101px;
+        }
+    }
+
+    &__number {
+        display: block;
+        font-size: 100px;
+        font-weight: 900;
+        line-height: 80px;
+        height: 90px;
+        color: $bg-secondary;
+    }
+
+    &__text {
+        position: relative;
+        margin: 0;
+        margin-top: 10px;
+
+        font-size: 18px;
+        line-height: 33px;
+        color: $light-common;
+
+        &--token {
+            padding-right: 115px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 102px;
+                height: 97px;
+                top: -5px;
+                right: 0;
+
+                background-image: url('../img/ntn@1x.webp');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+
+                @media (min-resolution: 2dppx) {
+                    background-image: url('../img/ntn@2x.webp');
+                }
+
+                @media (min-resolution: 3dppx) {
+                    background-image: url('../img/ntn@3x.webp');
+                }
+            }
+        }
+
+        &--bold {
+            font-weight: 700;
+        }
+    }
+}

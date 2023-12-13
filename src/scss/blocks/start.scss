@@ -1,0 +1,40 @@
+.start {
+    background-position: center;
+    background-size: 1532px 907px;
+    background-repeat: no-repeat;
+    background-image: url('../img/start-bg@1x.webp');
+
+    @media (min-resolution: 2dppx) {
+        background-image: url('../img/start-bg@2x.webp');
+    }
+
+    @media (min-resolution: 3dppx) {
+        background-image: url('../img/start-bg@3x.webp');
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 200px;
+        padding-bottom: 120px;
+    }
+
+    &__box {
+        &--title {
+            margin-top: 82px;
+            width: 80%;
+        }
+
+        &--social {
+            margin-left: auto;
+        }
+    }
+
+    &__title {
+        max-width: 347px;
+    }
+
+    &__text {
+        margin-top: 10px;
+    }
+}

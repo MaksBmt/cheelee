@@ -1,0 +1,34 @@
+.watching {
+    &__wrap {
+        padding-left: 115px;
+        padding-right: 115px;
+        padding-bottom: 99px;
+
+        background-image: url('../img/boxes-bg@1x.webp');
+        background-repeat: no-repeat;
+        background-position-x: 893px;
+        background-size: 404px 306px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/boxes-bg@2x.webp');
+        }
+
+        @media (min-resolution: 3dppx) {
+            background-image: url('../img/boxes-bg@3x.webp');
+        }
+    }
+
+    &__title {
+        width: 740px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        width: 430px;
+        margin: 0;
+        font-size: 18px;
+        line-height: 33px;
+        color: $light-common;
+        font-weight: 400;
+    }
+}

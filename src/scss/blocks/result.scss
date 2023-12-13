@@ -1,0 +1,77 @@
+.result {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &--cheel {
+        &::before {
+            background-image: url('../img/chell@1x.webp');
+
+            @media (min-resolution: 2dppx) {
+                background-image: url('../img/chell@2x.webp');
+            }
+
+            @media (min-resolution: 3dppx) {
+                background-image: url('../img/chell@3x.webp');
+            }
+        }
+    }
+
+    &--lee {
+        &::before {
+            background-image: url('../img/lee@1x.webp');
+
+            @media (min-resolution: 2dppx) {
+                background-image: url('../img/lee@2x.webp');
+            }
+
+            @media (min-resolution: 3dppx) {
+                background-image: url('../img/lee@3x.webp');
+            }
+        }
+    }
+
+
+    &__name {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10px;
+        color: $text-disabled;
+        text-transform: uppercase;
+    }
+
+    &__quantity {
+        position: relative;
+        display: flex;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $white;
+        padding-right: 10px;
+    }
+
+    &__svg {
+        position: absolute;
+        width: 7px;
+        height: 5px;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: $green-common;
+    }
+}

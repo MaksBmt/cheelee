@@ -1,0 +1,20 @@
+.nav {
+    &__list {
+        @include list-reset();
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $text-disabled;
+
+        &--active {
+            font-weight: 700;
+            color: $green-common;
+        }
+    }
+}

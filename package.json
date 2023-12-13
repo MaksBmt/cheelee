@@ -1,0 +1,41 @@
+{
+	"name": "talala_test",
+	"version": "1.0.0",
+	"description": "тестовое задание",
+	"main": "gulpfile.js",
+	"type": "module",
+	"scripts": {
+		"dev": "gulp",
+		"build": "gulp build --build",
+		"svgSprite": "gulp svgSpriteTask"
+	},
+	"keywords": [],
+	"author": "MaxBmt",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.28.3",
+		"del": "^6.1.1",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-file-include": "^2.3.0",
+		"gulp-fonter-fix": "^0.0.1",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-notify": "^4.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-replace": "^1.1.4",
+		"gulp-sass": "^5.1.0",
+		"gulp-svg-sprite": "^2.0.1",
+		"gulp-ttf2woff2": "^4.0.1",
+		"gulp-version-number": "^0.2.4",
+		"gulp-webp": "^4.0.1",
+		"gulp-webp-html-nosvg": "^1.1.1",
+		"sass": "^1.58.3",
+		"swiper": "^9.1.0",
+		"webpack": "^5.76.0",
+		"webpack-stream": "^7.0.0"
+	}
+}

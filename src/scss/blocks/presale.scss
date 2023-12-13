@@ -1,0 +1,96 @@
+.presale {
+    &__wrap {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 1354px;
+            height: 187px;
+            background-image: url('../img/presale.svg');
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 1354px;
+            height: 187px;
+            background-image: url('../img/subtract.svg');
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            transform: translateY(-50%);
+            left: 352px;
+            width: 36px;
+            height: 18px;
+            background-image: url('../img/arrow-left.svg');
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 100%;
+            transform: translateY(-50%);
+            right: 350px;
+            width: 36px;
+            height: 18px;
+            background-image: url('../img/arrow-right.svg');
+        }
+    }
+
+    &__box {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 115px;
+        padding-right: 119px;
+        padding-top: 54px;
+        padding-bottom: 53px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 92px;
+            width: 255px;
+            height: 1px;
+            border-top: 1px dotted $blue-common;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 99.5%;
+            right: 92px;
+            width: 252px;
+            height: 1px;
+            border-top: 1px dotted $blue-common;
+        }
+    }
+
+    &__button {
+        @include button();
+        padding: 28px 40px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $light-common;
+
+        border-radius: 40px;
+        background-color: $blue-common;
+    }
+}

@@ -1,0 +1,12 @@
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}

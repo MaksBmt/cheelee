@@ -1,0 +1,74 @@
+.audit {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 22px;
+    padding-left: 62px;
+
+    border-radius: 30px;
+    background-color: $bg-secondary;
+
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 31px;
+        height: 34px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 22px;
+
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../img/chertik-icon.svg');
+    }
+
+    &__title {
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 7px;
+
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 2.1px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 10px;
+            left: 0;
+            top: 0;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('../img/shield.svg');
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 5px;
+            left: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('../img/check.svg');
+        }
+    }
+
+    &__svg {
+        width: 93px;
+        height: 12px;
+        margin-bottom: 2px;
+        stroke: $white;
+    }
+}
